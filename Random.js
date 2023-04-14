@@ -3,6 +3,11 @@ var CurrentID = 0
 
 CurrentID = StartID;
 
+function updateBoardId() {
+  var updatedID = CurrentID
+  return updatedID
+}
+
 window.TrelloPowerUp.initialize({
     'card-buttons': function (t, options) {
       return [
@@ -21,6 +26,14 @@ window.TrelloPowerUp.initialize({
             return t.card().then((card) => alert(CurrentID))
           }
         }
+      ];
+    },
+    'board-buttons': function (t, options) {
+      return [
+        {
+          icon: "https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png",
+          text: CurrentID,
+        },
       ];
     },
 });
