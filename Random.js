@@ -1,6 +1,6 @@
 var CurrentID = 0
 
-function addID() {
+function addID(newID) {
     var newID = CurrentID++;
     return newID
 }
@@ -12,7 +12,7 @@ window.TrelloPowerUp.initialize({
           icon: "https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png",
           text: 'Hello World!',
           callback: function (t) {
-            return t.card().then((card) => alert(addID()))
+            return t.card().then((card) => alert(addID(newID)))
           }
         }
       ];
