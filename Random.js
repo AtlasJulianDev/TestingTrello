@@ -2,8 +2,8 @@ var CurrentID = 0
 var OldID = CurrentID
 
 function handleID(newId) {
-    newId = toString(CurrentID)
-    OldID = newId++;
+    var newerId = newId
+    OldID = newerId++;
 }
 
 window.TrelloPowerUp.initialize({
@@ -18,17 +18,5 @@ window.TrelloPowerUp.initialize({
           }
         }
       ];
-    },
-    "card-detail-badges": function (t, opts) {
-        return [
-            {
-                dynamic: function () {
-                    return {
-                        title: "Ticket Counter",
-                        text: handleID(newId),
-                    };
-                },
-            },
-        ];
     },
 });
