@@ -32,6 +32,7 @@ window.TrelloPowerUp.initialize({
       return [
         {
           icon: "https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png",
+          callback: this.reload(),
           text: CurrentID,
         },
       ];
