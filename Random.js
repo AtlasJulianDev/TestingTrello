@@ -2,8 +2,7 @@ var CurrentID = 0
 
 function addID() {
     var newID = CurrentID++;
-    CurrentID = newID
-    return CurrentID
+    return newID
 }
 
 window.TrelloPowerUp.initialize({
