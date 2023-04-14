@@ -1,7 +1,6 @@
 var CurrentID = 0
 
 function addID() {
-    CurrentID =  CurrentID
     var newID = CurrentID++;
     CurrentID = newID
     return CurrentID
