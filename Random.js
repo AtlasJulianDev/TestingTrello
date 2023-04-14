@@ -1,4 +1,11 @@
 var CurrentID = 0
+
+function addID() {
+    var newID = CurrentID++;
+    CurrentID = newID
+    return CurrentID
+}
+
 window.TrelloPowerUp.initialize({
     'card-buttons': function (t, options) {
       return [
@@ -7,6 +14,7 @@ window.TrelloPowerUp.initialize({
           text: 'Hello World!',
           callback: function (t) {
             return t.card().then((card) => alert(CurrentID))
+            addID()
           }
         }
       ];
