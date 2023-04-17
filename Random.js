@@ -33,12 +33,11 @@ window.TrelloPowerUp.initialize({
         .card("name")
         .get("name")
         .then(function (cardName) {
-          console.log("We just loaded the card name for fun: " + cardName);
-  
+          let ticketID =  CurrentID
           return [
             {
               title: "Ticket ID",
-              text: CurrentID,
+              text: ticketID,
               color: null,
             },
           ];
