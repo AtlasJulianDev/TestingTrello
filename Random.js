@@ -45,6 +45,13 @@ window.TrelloPowerUp.initialize({
                   return alert("Do something")
                 },
             },
+            {
+              // its best to use static badges unless you need your badges
+              // to refresh you can mix and match between static and dynamic
+              title: "Detail Badge",
+              text: "Static",
+              color: null,
+            },
           ];
         });
     },
