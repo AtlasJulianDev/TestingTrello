@@ -3,6 +3,8 @@ var CurrentID = 0
 
 CurrentID = StartID;
 
+let ticketID =  CurrentID;
+
 function updateBoardId() {
   var updatedID = CurrentID
   return updatedID
@@ -33,7 +35,6 @@ window.TrelloPowerUp.initialize({
         .card("name")
         .get("name")
         .then(function (cardName) {
-          let ticketID =  CurrentID
           return [
             {
               title: "Ticket ID",
