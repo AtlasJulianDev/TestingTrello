@@ -33,7 +33,7 @@ window.TrelloPowerUp.initialize({
         icon: 'https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png',
         text: 'Check laatse ticket ID', 
         callback: function(){
-          t.alert('Laatse ticket is gemaakt met het ID ' + CurrentID);
+          return t.alert('Laatse ticket is gemaakt met het ID ' + CurrentID);
         }
       }];
     }
