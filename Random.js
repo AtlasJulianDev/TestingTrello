@@ -37,19 +37,8 @@ window.TrelloPowerUp.initialize({
   
           return [
             {
-                title: "Popup Detail Badge",
-                text: "Popup",
-                callback: function (t, opts) {
-                  // function to run on click
-                  // do something
-                  return alert("Do something")
-                },
-            },
-            {
-              // its best to use static badges unless you need your badges
-              // to refresh you can mix and match between static and dynamic
-              title: "Detail Badge",
-              text: "Static",
+              title: "Ticket ID",
+              text: CurrentID,
               color: null,
             },
           ];
