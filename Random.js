@@ -28,6 +28,23 @@ window.TrelloPowerUp.initialize({
         }
       ];
     },
+    "card-detail-badges": function (t, opts) {
+      return t.card("name").get("name").then(function (cardName) {
+         alert("We just loaded the card name for fun: " + cardName);
+          return [
+            {
+              dynamic: function () {
+                return {
+                  title: "Detail Badge",
+                  text: "Dynamic " + (Math.random() * 100).toFixed(0).toString(),
+                  color: randomBadgeColor(),
+                  refresh: 10, // in seconds
+                };
+              },
+            },
+          ];
+      });
+    },
     'board-buttons': function(t, options){
       return [
         {
@@ -35,7 +52,7 @@ window.TrelloPowerUp.initialize({
         text: 'Check laatse ticket ID', 
 
         callback: function(t){
-          return alert('Ticket ID','Laatse ticket is gemaakt met het ID: ' + CurrentID);
+          return alert('Laatse ticket is gemaakt met het ID: ' + CurrentID);
         }
       }];
     }
