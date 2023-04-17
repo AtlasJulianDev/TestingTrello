@@ -28,13 +28,13 @@ window.TrelloPowerUp.initialize({
         }
       ];
     },
-    'board-buttons': function (t, options) {
-      return [
-        {
-          icon: "https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png",
-          callback: this.reload(),
-          text: CurrentID,
-        },
-      ];
-    },
+    'board-buttons': function(t, options){
+      return [{
+        icon: 'https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png',
+        text: 'Check laatse ticket ID', 
+        callback: function(t){
+          t.alert('ticket ID', 'Laatse ticket is gemaakt met het ID ' + CurrentID);
+        }
+      }];
+    }
 });
