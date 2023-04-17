@@ -35,7 +35,7 @@ window.TrelloPowerUp.initialize({
         text: 'Check laatse ticket ID', 
 
         callback: function(t){
-          return alert('Laatse ticket is gemaakt met het ID ' + CurrentID);
+          return alert('Ticket ID','Laatse ticket is gemaakt met het ID: ' + CurrentID);
         }
       }];
     }
