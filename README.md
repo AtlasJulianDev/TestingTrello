@@ -1,6 +1,6 @@
 # TestingTrello
 Ticket ID system
-version: **2.01**
+version: **2.04**
  > Version might not match due to the rapid change of code.
 
 # Features
@@ -10,4 +10,4 @@ Check ID<br>
 View latest ID
 
 ## Version 2.0 - 2.25
-N/A
+Nothing known yet

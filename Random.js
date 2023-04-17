@@ -29,21 +29,24 @@ window.TrelloPowerUp.initialize({
       ];
     },
     "card-detail-badges": function (t, opts) {
-      return t.card("name").get("name").then(function (cardName) {
-         alert("Your ticket has an ID of " + CurrentID);
+      return t
+        .card("name")
+        .get("name")
+        .then(function (cardName) {
+          console.log("We just loaded the card name for fun: " + cardName);
+  
           return [
             {
-              dynamic: function () {
-                return {
-                  title: "Detail Badge",
-                  text: "Dynamic " + (Math.random() * 100).toFixed(0).toString(),
-                  color: randomBadgeColor(),
-                  refresh: 10, // in seconds
-                };
-              },
+                title: "Popup Detail Badge",
+                text: "Popup",
+                callback: function (t, opts) {
+                  // function to run on click
+                  // do something
+                  return alert("Do something")
+                },
             },
           ];
-      });
+        });
     },
     'board-buttons': function(t, options){
       return [
