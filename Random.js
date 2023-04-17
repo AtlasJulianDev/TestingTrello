@@ -29,11 +29,13 @@ window.TrelloPowerUp.initialize({
       ];
     },
     'board-buttons': function(t, options){
-      return [{
+      return [
+        {
         icon: 'https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png',
         text: 'Check laatse ticket ID', 
-        callback: function(){
-          return t.alert('Laatse ticket is gemaakt met het ID ' + CurrentID);
+
+        callback: function(t){
+          return alert('Laatse ticket is gemaakt met het ID ' + CurrentID);
         }
       }];
     }
