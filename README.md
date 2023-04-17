@@ -5,8 +5,8 @@ version: **2.01**
 
 # Features
 ## Version 1.0 - 1.25
-add ID
-Check ID
+add ID[^2]
+Check ID[^2]
 View latest ID
 
 ## Version 2.0 - 2.25
